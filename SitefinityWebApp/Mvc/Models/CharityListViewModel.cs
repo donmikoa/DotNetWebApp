@@ -17,7 +17,6 @@ namespace SitefinityWebApp.Mvc.Models
 
         private readonly IEnumerable<CharityList> _results;
 
-
         public IEnumerable<CharityList> Results { get { return this._results; } }
 
     }
