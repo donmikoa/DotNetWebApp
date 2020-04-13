@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -9,7 +10,7 @@ namespace SitefinityWebApp.Mvc.Models
 {
     public class Seal : IComparable<Seal>
     {
-
+        
         public Seal(string title, string reporturl)
         {
             this._name = title;

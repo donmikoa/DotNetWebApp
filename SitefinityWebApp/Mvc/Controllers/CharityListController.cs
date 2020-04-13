@@ -21,7 +21,7 @@ namespace SitefinityWebApp.Mvc.Controllers
     [ControllerToolboxItem(Name = "Charity List", Title = "Charity List", SectionName = "MvcWidgets")]
     public class CharityListController : Controller
     {
-
+        //All the categories in Charity
         public Dictionary<string, string> categoryList = new Dictionary<string, string>()
         {
             {"select", null},
