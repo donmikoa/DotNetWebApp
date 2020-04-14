@@ -1067,12 +1067,14 @@
     <Compile Include="AzureWebRole.cs" />
     <Compile Include="Mvc\Controllers\AllCharityController.cs" />
     <Compile Include="Mvc\Controllers\CharityListController.cs" />
+    <Compile Include="Mvc\Controllers\MessageWidgetController.cs" />
     <Compile Include="Mvc\Controllers\RecentNewsController.cs" />
     <Compile Include="Mvc\Controllers\SealController.cs" />
     <Compile Include="Mvc\Models\AllCharity.cs" />
     <Compile Include="Mvc\Models\AllCharityViewModel.cs" />
     <Compile Include="Mvc\Models\CharityList.cs" />
     <Compile Include="Mvc\Models\CharityListViewModel.cs" />
+    <Compile Include="Mvc\Models\MessageWidgetModel.cs" />
     <Compile Include="Mvc\Models\RecentNewsModel.cs" />
     <Compile Include="Mvc\Models\Seal.cs" />
     <Compile Include="Mvc\Models\SealViewModel.cs" />
@@ -1089,6 +1091,7 @@
     <Content Include="Mvc\Views\CharityList\Default.cshtml" />
     <Content Include="Mvc\Views\RecentNews\Default.cshtml" />
     <Content Include="Mvc\Views\Seal\Default.cshtml" />
+    <Content Include="Mvc\Views\MessageWidget\Default.cshtml" />
     <None Include="packages.config" />
     <Content Include="SampleTemplate.cshtml">
       <Generator>RazorGenerator</Generator>
