@@ -38,10 +38,12 @@ namespace SitefinityWebApp.Mvc.Controllers
             else
             {
                 model.Message = this.Message;
-                model.FirstLink = this.FirstLink;
-                model.SecondLink = this.SecondLink;
-                model.ThirdLink = this.ThirdLink;
             }
+
+            model.FirstLink = this.FirstLink;
+            model.SecondLink = this.SecondLink;
+            model.ThirdLink = this.ThirdLink;
+
             return View("Default", model);
         }
     }

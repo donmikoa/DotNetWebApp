@@ -1,0 +1,128 @@
+﻿/* Just For Demo Styles*/
+/* *** DO NOT COPY OVER *** */
+body {
+    background-color: #eee;
+}
+
+h6 {
+    color: var(--page-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+h3 {
+    color: var(--page-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+hr {
+    width: 10%;
+    height: 5px;
+    background-color: var(--page-color);
+}
+
+.container-fluid {
+    background: #fff;
+    margin-top: 5vh;
+    width: 90%;
+}
+/* Global Styles*/
+body {
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    --gutter-width: 50px;
+    --donors-primary-color: #008c56;
+    --charities-primary-color: #7474c1;
+    --media-primary-color: #002f6c;
+    --page-color: var(--donors-primary-color);
+}
+
+.gallery-title {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.gallery-view-more {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--page-color);
+}
+/* Component Styles */
+.container-fluid {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/* Gallery */
+.card-gallery .card:nth-child(3n + 1) {
+    margin-right: calc(var(--gutter-width) / 2);
+}
+
+.card-gallery .card:nth-child(3n + 2) {
+    margin-right: calc(var(--gutter-width) / 2);
+    margin-left: calc(var(--gutter-width) / 2);
+}
+
+.card-gallery .card:nth-child(3n + 3) {
+    margin-left: calc(var(--gutter-width) / 2);
+}
+/* Card Styling */
+.video-gallery .card-img-wrapper {
+    background-color: var(--page-color);
+}
+
+.video-gallery .card-img-top .video-gallery .card-img-overlay img
+
+{
+    height: 150px;
+    width: 150px;
+}
+
+.video-gallery .card-gallery .card iframe {
+    width: 100%;
+    height: 250px;
+}
+
+.card-title .card-title-font {
+    font-size: 16px;
+}
+
+.card-body h5 {
+    color: var(--page-color);
+}
+
+.card-text .card-font {
+    font-size: 14px;
+}
+
+#mobile {
+    display: none;
+}
+
+
+
+
+@media (max-width: 991.98px) {
+    .card-gallery .card {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .video-gallery .card-gallery .card iframe {
+        height: 150px;
+    }
+
+    #mobile {
+        text-align: center;
+        display: block;
+        margin-top: 20px;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    .card-gallery .card:nth-child(3n + 1) {
+        margin-right: 0;
+    }
+}
