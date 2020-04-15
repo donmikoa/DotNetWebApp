@@ -11,7 +11,6 @@ namespace SitefinityWebApp.Mvc.Models
 {
     public class VideoWidgetModel
     {
-        public string Message { get; set; }
         public string FirstLink { get; set; }
         public string SecondLink { get; set; }
         public string ThirdLink { get; set; }

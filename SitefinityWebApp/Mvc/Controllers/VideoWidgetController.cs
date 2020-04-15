@@ -9,40 +9,33 @@ using Telerik.Sitefinity.Mvc;
 
 namespace SitefinityWebApp.Mvc.Controllers
 {
-    [ControllerToolboxItem(Name = "VideoWidget", Title = "Video Widget", SectionName = "MvcWidgets")]
+    [ControllerToolboxItem(Name = "RecentVideos", Title = "Recent Videos", SectionName = "MvcWidgets")]
     public class VideoWidgetController : Controller
     {
-        [Category("String Properties")]
-        [DisplayName("First Message")]
-        [Description("Enter the First Message")]
-        public string Message { get; set; }
-
+      
         [Category("String Properties")]
         [DisplayName("First Video Link")]
+        [Description("Enter the First Video Link")]
         public string FirstLink { get; set; }
 
         [Category("String Properties")]
         [DisplayName("Second Video Link")]
+        [Description("Enter the First Video Link")]
         public string SecondLink { get; set; }
 
         [Category("String Properties")]
         [DisplayName("Third Video Link")]
+        [Description("Enter the First Video Link")]
         public string ThirdLink { get; set; }
         // GET: VideoWidget
         public ActionResult Index()
         {
-            var model = new VideoWidgetModel();
-
-            if (string.IsNullOrEmpty(this.Message))
-            { model.Message = "Hello World"; }
-            else
+            var model = new VideoWidgetModel
             {
-                model.Message = this.Message;
-            }
-
-            model.FirstLink = this.FirstLink;
-            model.SecondLink = this.SecondLink;
-            model.ThirdLink = this.ThirdLink;
+                FirstLink = this.FirstLink,
+                SecondLink = this.SecondLink,
+                ThirdLink = this.ThirdLink
+            };
 
             return View("Default", model);
         }
