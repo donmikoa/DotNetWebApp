@@ -9,7 +9,7 @@ using Telerik.Sitefinity.Mvc;
 
 namespace SitefinityWebApp.Mvc.Controllers
 {
-    [ControllerToolboxItem(Name = "RecentVideos", Title = "Recent Videos", SectionName = "MvcWidgets")]
+    [ControllerToolboxItem(Name = "RecentVideos", Title = "Recent Video", SectionName = "MvcWidgets")]
     public class VideoWidgetController : Controller
     {
       
@@ -20,22 +20,22 @@ namespace SitefinityWebApp.Mvc.Controllers
 
         [Category("String Properties")]
         [DisplayName("Second Video Link")]
-        [Description("Enter the First Video Link")]
+        [Description("Enter the Second Video Link")]
         public string SecondLink { get; set; }
 
         [Category("String Properties")]
         [DisplayName("Third Video Link")]
-        [Description("Enter the First Video Link")]
+        [Description("Enter the Third Video Link")]
         public string ThirdLink { get; set; }
         // GET: VideoWidget
         public ActionResult Index()
         {
-            var model = new VideoWidgetModel
-            {
-                FirstLink = this.FirstLink,
-                SecondLink = this.SecondLink,
-                ThirdLink = this.ThirdLink
-            };
+            var model = new VideoWidgetModel();
+
+            model.FirstLink = this.FirstLink;
+            model.SecondLink = this.SecondLink;
+            model.ThirdLink = this.ThirdLink;
+            
 
             return View("Default", model);
         }

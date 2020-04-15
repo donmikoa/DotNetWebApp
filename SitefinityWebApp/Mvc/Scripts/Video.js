@@ -75,10 +75,6 @@ $(document).ready(function () {
                     firstTitle = item.snippet.title;
                     firstDesc = item.snippet.description;
 
-                    //videoImg = item.snippet.thumbnails.standard.url;
-                    //text = '<iframe style="height:400px;" src="//www.youtube.com/embed/' + videoId + '" frameborder="0"></iframe>';
-                   
-
                     firstOutput = '<iframe style="height:400px;" src="//www.youtube.com/embed/' +
                         videoId1 +
                         '" frameborder="0"></iframe><div class="card-body"><h5 style="color:#008c56;" class="card-title card-title-font"><strong>' +
@@ -105,10 +101,6 @@ $(document).ready(function () {
                     secondTitle = item.snippet.title;
                     secondDesc = item.snippet.description;
 
-                    //videoImg = item.snippet.thumbnails.standard.url;
-                    //text = '<iframe style="height:400px;" src="//www.youtube.com/embed/' + videoId + '" frameborder="0"></iframe>';
-                   
-
                     secondOutput = '<iframe style="height:400px;" src="//www.youtube.com/embed/' +
                         videoId2 +
                         '" frameborder="0"></iframe><div class="card-body"><h5 style="color:#008c56;" class="card-title card-title-font"><strong>' +
@@ -134,10 +126,6 @@ $(document).ready(function () {
                     console.log(item);
                     thirdTitle = item.snippet.title;
                     thirdDesc = item.snippet.description;
-
-                    //videoImg = item.snippet.thumbnails.standard.url;
-                    //text = '<iframe style="height:400px;" src="//www.youtube.com/embed/' + videoId + '" frameborder="0"></iframe>';
-
 
                     thirdOutput = '<iframe style="height:400px;" src="//www.youtube.com/embed/' +
                         videoId3 +
