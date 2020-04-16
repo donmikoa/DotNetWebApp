@@ -29,7 +29,7 @@ namespace SitefinityWebApp.Mvc.Controllers
         public string ThirdLink { get; set; }
 
         [Category("String Properties")]
-        [DisplayName("Playlist Link")]
+        [DisplayName("Set a Playlist (Enter Playlist Link)")]
         [Description("Enter the Playlist Link")]
         public string PlayList { get; set; }
         // GET: VideoWidget
