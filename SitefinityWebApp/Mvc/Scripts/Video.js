@@ -11,20 +11,24 @@ $(document).ready(function () {
             $.each(data.items, function (i, item) {
                 console.log(item);
                 pid = item.contentDetails.relatedPlaylists.uploads;
-                getVideos(pid);
+                
+                getVideos();
                 getDetails();
+                
+
             });
         }
     );
 
-    function getVideos(pid) {
+    function getVideos() {
         var playList = document.getElementById('playList').innerHTML;
+        console.log(playList);
         $.get(
             'https://www.googleapis.com/youtube/v3/playlistItems',
             {
                 part: 'snippet',
                 maxResults: 30,
-                playlistId: pid,
+                playlistId: playList,
                 key: 'AIzaSyDSWjSqvhB-NdjinRpufql1NObgF2BsKP4',
             },
             function (data) {
