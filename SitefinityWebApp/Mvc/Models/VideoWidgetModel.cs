@@ -14,5 +14,7 @@ namespace SitefinityWebApp.Mvc.Models
         public string FirstLink { get; set; }
         public string SecondLink { get; set; }
         public string ThirdLink { get; set; }
+
+        public string PlayList { get; set; }
     }
 }

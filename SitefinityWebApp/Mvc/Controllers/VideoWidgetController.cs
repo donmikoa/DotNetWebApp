@@ -27,6 +27,8 @@ namespace SitefinityWebApp.Mvc.Controllers
         [DisplayName("Third Video Link")]
         [Description("Enter the Third Video Link")]
         public string ThirdLink { get; set; }
+
+        public string PlayList { get; set; }
         // GET: VideoWidget
         public ActionResult Index()
         {
@@ -35,6 +37,7 @@ namespace SitefinityWebApp.Mvc.Controllers
             model.FirstLink = this.FirstLink;
             model.SecondLink = this.SecondLink;
             model.ThirdLink = this.ThirdLink;
+            model.PlayList = this.PlayList;
             
 
             return View("Default", model);
