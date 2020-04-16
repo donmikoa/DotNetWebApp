@@ -18,6 +18,7 @@ $(document).ready(function () {
     );
 
     function getVideos(pid) {
+        var playList = document.getElementById('playList').innerHTML;
         $.get(
             'https://www.googleapis.com/youtube/v3/playlistItems',
             {
