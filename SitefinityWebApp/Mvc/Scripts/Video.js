@@ -22,7 +22,6 @@ $(document).ready(function () {
 
     function getVideos() {
         var playList = document.getElementById('playList').innerHTML;
-        console.log(playList);
         $.get(
             'https://www.googleapis.com/youtube/v3/playlistItems',
             {
