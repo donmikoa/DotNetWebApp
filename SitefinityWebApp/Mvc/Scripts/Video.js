@@ -9,7 +9,6 @@ $(document).ready(function () {
         },
         function (data) {
             $.each(data.items, function (i, item) {
-                console.log(item);
                 pid = item.contentDetails.relatedPlaylists.uploads;
                 
                 getVideos();
