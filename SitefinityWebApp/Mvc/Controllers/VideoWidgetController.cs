@@ -35,7 +35,6 @@ namespace SitefinityWebApp.Mvc.Controllers
         // GET: VideoWidget
         public ActionResult Index()
         {
-            
             var model = new VideoWidgetModel();
 
             model.FirstLink = this.FirstLink;
