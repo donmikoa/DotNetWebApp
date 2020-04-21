@@ -64,7 +64,7 @@ $(document).ready(function () {
         var videoId1 = document.getElementById('videoId1').innerHTML;
         var videoId2 = document.getElementById('videoId2').innerHTML;
         var videoId3 = document.getElementById('videoId3').innerHTML;
-        console.log(videoId1);
+        
         $.get(
             'https://www.googleapis.com/youtube/v3/videos',
             {
