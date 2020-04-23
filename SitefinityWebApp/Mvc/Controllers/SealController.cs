@@ -107,7 +107,6 @@ namespace SitefinityWebApp.Mvc.Controllers
                 url += " AND tobcode:";
                 url += categoryList[categories];
                 url += ")";
-
             }
             else
             {
