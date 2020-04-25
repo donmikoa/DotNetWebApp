@@ -160,7 +160,7 @@ input {
     width: 45%;
 }
 
-    input.search-query {
+input.search-query {
         background-color: #f47443;
         color: black;
     }
