@@ -180,13 +180,8 @@ input.search-query {
     #mega-header a {
         color: #fff;
     }
-/* ***** Landing Jumbotron ***** */
-#landing-jumbotron {
-    background: url('/sf-images/default-source/for-charities/donor-pics.jpg?Status=Temp&amp;sfvrsn=5845e9fc_2');
-    background-repeat: round;
-}
 
-    #landing-jumbotron a {
+#landing-jumbotron a {
         color: #fff;
         font-size: 16px;
         font-weight: 600;
