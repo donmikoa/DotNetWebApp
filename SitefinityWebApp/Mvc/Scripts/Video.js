@@ -77,13 +77,15 @@ $(document).ready(function () {
                     firstTitle = item.snippet.title;
                     firstDesc = item.snippet.description;
 
-                    firstOutput = '<iframe style="height:400px;" src="//www.youtube.com/embed/' +
-                        videoId1 +
-                        '" frameborder="0"></iframe><div class="card-body"><h5 style="color:#008c56;" class="card-title card-title-font"><strong>' +
-                        firstTitle +
-                        '</strong></h5><p class="card-text card-font">' +
-                        firstDesc +
-                        '</p></div>';
+                    firstOutput = '<div class="card shadow" style="flex:1 0 30%; margin-bottom: 50px;"><img style="height:400px; width:100%" src="https://i.ytimg.com/vi/' +
+                        videoId +
+                        '/hqdefault.jpg"/><div class="card-body"><a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/' +
+                        videoId +
+                        '"><h5 style="color:#18306b;" class="card-title card-title-font"><strong>' +
+                        videoTitle +
+                        '</strong></h5></a><p class="card-text card-font">' +
+                        videoDesc +
+                        '</p></div></div>';
 
                     $('#video1').append(firstOutput);
                 });
