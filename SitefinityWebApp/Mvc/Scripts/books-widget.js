@@ -23,7 +23,6 @@
         });
     };
 
-
     $(function () {
         $('div[data-role=books-widget]').each(function (index, value) {
             initializeBooksWidget(value);
