@@ -34,7 +34,6 @@ $('.directory-list').each(function () {
 	}
 });
 
-
 document.getElementById("refresh-btn").onclick = function () {
 	$('.charity-type').val('select').trigger('change');
 };
