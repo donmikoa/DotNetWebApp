@@ -100,7 +100,7 @@ namespace SitefinityWebApp.Mvc.Controllers
             string url = "http://192.168.225.84:8080/solr/WGA/select?q=(bureauid:9999";
             // string url = "http://172.16.1.36:4001/search/?term=" + term;
 
-            url += "AND sealholder:true";
+            url += " AND sealholder:true";
 
             if (categories != null)
             {
