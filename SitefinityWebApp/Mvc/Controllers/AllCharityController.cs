@@ -92,7 +92,6 @@ namespace SitefinityWebApp.Mvc.Controllers
 
 
 
-
         private string assembleRequestUrl(string categories)
         {
             // Assemble request URL
