@@ -44,16 +44,18 @@ $(document).ready(function () {
                         videoId +
                         '"></frame></li>';
                     text =
-                        '<div class="card shadow" style="flex:1 0 25%; margin-bottom: 50px;"><iframe style="height:400px;" src="//www.youtube.com/embed/' +
+                        '<div class="card shadow" style="flex:1 0 30%; margin-bottom: 50px;"><img src="https://i.ytimg.com/vi/' +
                         videoId +
-                        '" frameborder="0"></iframe><div class="card-body"><h5 style="color:#008c56;" class="card-title card-title-font"><strong>' +
+                        '/hqdefault.jpg"/><div class="card-body"><a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/' +
+                        videoId +
+                        '"><h5 style="color:#18306b;" class="card-title card-title-font"><strong>' +
                         videoTitle +
-                        '</strong></h5><p class="card-text card-font">' +
+                        '</strong></h5></a><p class="card-text card-font">' +
                         videoDesc +
                         '</p></div></div>';
 
-                    $('#results').append(output);
                     $('#load').append(text);
+                    $('.venobox').venobox();
                 });
             }
         );
