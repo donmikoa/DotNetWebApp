@@ -58,7 +58,6 @@ else
 }
 
 
-
 @if (!(String.IsNullOrEmpty(Model.PlayList)))
 {
     <span id="playList" style="display:none">@Model.PlayList.Substring(49, 34)</span>
@@ -79,6 +78,7 @@ else
     <span id="playList" style="display:none">@Model.PlayList</span>
 }
 
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 @Html.Script(Url.WidgetContent("Mvc/Scripts/Video.js"), "bottom")
 @Html.Script(Url.WidgetContent("Mvc/Scripts/venobox.min.js"), "bottom")

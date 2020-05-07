@@ -13,7 +13,6 @@ $(document).ready(function () {
                 
                 getVideos();
                 getDetails();
-
             });
         }
     );
@@ -50,9 +49,7 @@ $(document).ready(function () {
                         videoId +
                         '"><h5 style="color:#18306b;" class="card-title card-title-font"><strong>' +
                         videoTitle +
-                        '</strong></h5></a><p class="card-text card-font">' +
-                        videoDesc +
-                        '</p></div></div>';
+                        '</strong></h5></a></div></div>';
 
                     $('#load').append(text);
                     $('.venobox').venobox();
@@ -79,17 +76,18 @@ $(document).ready(function () {
                     firstTitle = item.snippet.title;
                     firstDesc = item.snippet.description;
 
-                    firstOutput = '<div class="card shadow" style="flex:1 0 30%; margin-bottom: 50px;"><img style="height:400px; width:100%" src="https://i.ytimg.com/vi/' +
-                        videoId +
+                    firstOutput = '<img src="https://i.ytimg.com/vi/' +
+                        videoId1 +
                         '/hqdefault.jpg"/><div class="card-body"><a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/' +
-                        videoId +
+                        videoId1 +
                         '"><h5 style="color:#18306b;" class="card-title card-title-font"><strong>' +
-                        videoTitle +
+                        firstTitle +
                         '</strong></h5></a><p class="card-text card-font">' +
-                        videoDesc +
-                        '</p></div></div>';
+                        firstDesc +
+                        '</p></div>';
 
                     $('#video1').append(firstOutput);
+                    $('.venobox').venobox();
                 });
             }
         );
@@ -107,15 +105,18 @@ $(document).ready(function () {
                     secondTitle = item.snippet.title;
                     secondDesc = item.snippet.description;
 
-                    secondOutput = '<iframe style="height:400px;" src="//www.youtube.com/embed/' +
+                    secondOutput = '<img src="https://i.ytimg.com/vi/' +
                         videoId2 +
-                        '" frameborder="0"></iframe><div class="card-body"><h5 style="color:#008c56;" class="card-title card-title-font"><strong>' +
+                        '/hqdefault.jpg"/><div class="card-body"><a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/' +
+                        videoId2 +
+                        '"><h5 style="color:#18306b;" class="card-title card-title-font"><strong>' +
                         secondTitle +
-                        '</strong></h5><p class="card-text card-font">' +
+                        '</strong></h5></a><p class="card-text card-font">' +
                         secondDesc +
                         '</p></div>';
 
                     $('#video2').append(secondOutput);
+                    $('.venobox').venobox();
                 });
             }
         );
@@ -133,15 +134,18 @@ $(document).ready(function () {
                     thirdTitle = item.snippet.title;
                     thirdDesc = item.snippet.description;
 
-                    thirdOutput = '<iframe style="height:400px;" src="//www.youtube.com/embed/' +
+                    thirdOutput = '<img src="https://i.ytimg.com/vi/' +
                         videoId3 +
-                        '" frameborder="0"></iframe><div class="card-body"><h5 style="color:#008c56;" class="card-title card-title-font"><strong>' +
+                        '/hqdefault.jpg"/><div class="card-body"><a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/' +
+                        videoId3 +
+                        '"><h5 style="color:#18306b;" class="card-title card-title-font"><strong>' +
                         thirdTitle +
-                        '</strong></h5><p class="card-text card-font">' +
+                        '</strong></h5></a><p class="card-text card-font">' +
                         thirdDesc +
                         '</p></div>';
 
                     $('#video3').append(thirdOutput);
+                    $('.venobox').venobox();
                 });
             }
         );
