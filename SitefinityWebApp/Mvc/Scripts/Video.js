@@ -37,7 +37,7 @@ $(document).ready(function () {
                     videoDesc = item.snippet.description;
                     videoId = item.snippet.resourceId.videoId;
                     //videoImg = item.snippet.thumbnails.standard.url;
-                    output = '<li>' + videoTitle + '</li>';
+                    
                     next =
                         '<li><iframe src="//www.youtube.com/embed/' +
                         videoId +
