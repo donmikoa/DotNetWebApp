@@ -17,6 +17,7 @@ $(document).ready(function () {
         }
     );
 
+
     function getVideos() {
         var playList = document.getElementById('playList').innerHTML;
         $.get(
