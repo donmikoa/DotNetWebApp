@@ -19,7 +19,6 @@ window.onload = function () {
 	} else {
 		$('.charity-type').val(selItem);
 	}
-	
 }
 
 $('.charity-type').change(function () {
