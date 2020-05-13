@@ -11,7 +11,6 @@
 		t.show(600);
 });
 
-
 window.onload = function () {
 	var selItem = sessionStorage.getItem("SelItem");
 	if (selItem == null) {
