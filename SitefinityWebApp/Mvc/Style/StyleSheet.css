@@ -212,14 +212,6 @@ input.search-query {
     font-size: 20px;
 }
 
-
-#landing-jumbotron button {
-    text-transform: uppercase;
-    border-radius: 30px;
-    padding: 15px 25px;
-    color: #fff;
-}
-
 #landing-jumbotron nav {
     border-bottom: 1px solid #fff;
     width: 90%;
