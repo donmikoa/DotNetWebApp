@@ -43,14 +43,7 @@ ul .directory-list {
     background: -o-linear-gradient(top, rgba(255, 255, 255, 1), rgba(231, 231, 231, 1));
 }
 
-.form-container button[type="set"].refresh-btn {
-    background: url(https://www.give.org/images/Give/refresh-icon.png) no-repeat right center;
-    padding: 0 25px 0 0;
-    margin: 0;
-    font-weight: normal;
-    color: #0e839f !important;
-    behavior: none;
-}
+
 
 .form-container .form-filter th label,
 .form-container .form-filter th select {
