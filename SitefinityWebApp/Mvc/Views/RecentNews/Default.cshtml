@@ -37,7 +37,7 @@
                         </strong>
                     </h5>
                     <p>
-                        @Html.Raw(newsItem.Summary).ToString().Substring(5, 210) ... <span><strong><a style="font-size:16px; color: #018c56;" href="@string.Format("/news{0}" , newsItem.ItemDefaultUrl)">READ MORE</a></strong></span>
+                        @Html.Raw(newsItem.Content).ToString().Substring(5, 210) ... <span><strong><a style="font-size:16px; color: #018c56;" href="@string.Format("/news{0}" , newsItem.ItemDefaultUrl)">READ MORE</a></strong></span>
                     </p>
                 </div>
             }

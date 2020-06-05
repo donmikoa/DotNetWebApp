@@ -9,7 +9,6 @@
     width: 1000px;
     margin: 0 auto;
     padding: 0;
-    background-color: white;
 }
 
 ul .directory-list {
@@ -218,13 +217,6 @@ input.search-query {
     margin: auto;
 }
 
-#landing-jumbotron .search-bar {
-    width: 100%;
-    background: linear-gradient(#08915c, #08915c);
-    padding: 18px;
-    color: #fff;
-}
-
 .form-control-underlined {
     border-width: 0;
     border-bottom-width: 1px;
@@ -423,9 +415,7 @@ div.for-charities {
     padding-top: 9%;
 }
 
-.section-header {
-    padding: 80px;
-}
+
 
 .gallery-title {
     text-transform: uppercase;
