@@ -83,10 +83,11 @@
                 <button id="refresh-btn">Reset</button>
             </div>
             
-            <div>
-                <input type="checkbox" onchange="accreditation(this)" /><p>Accredited</p>
-            </div>
             
+            <div style="margin-top: 10px;" class="row">
+                <input type="checkbox" onchange="accreditation(this)" style="width: auto; margin-left: 40px; margin-top: 5px; margin-right: 5px;">
+                <p>Accredited</p>
+            </div>
           
             
         </div>
@@ -101,7 +102,7 @@
                 {
                     if (item.Name == null || item.Name.StartsWith("1") || item.Name.StartsWith("2") || item.Name.StartsWith("3") || item.Name.StartsWith("4") || item.Name.StartsWith("5") || item.Name.StartsWith("6") || item.Name.StartsWith("7") || item.Name.StartsWith("8") || item.Name.StartsWith("9") || item.Name.StartsWith("0"))
                     {
-                        <li class="directory"><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     };
                 }
 
@@ -136,7 +137,7 @@
                     {
 
 
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
 
@@ -154,7 +155,7 @@
                     {
 
 
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
 
@@ -172,7 +173,7 @@
                     {
 
 
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
 
@@ -190,7 +191,7 @@
                     {
 
 
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
 
@@ -208,7 +209,7 @@
                     {
 
 
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
                 }
@@ -225,7 +226,7 @@
                     {
 
 
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
                 }
@@ -242,7 +243,7 @@
                     {
 
 
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
                 }
@@ -259,7 +260,7 @@
                     {
 
 
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
                 }
@@ -276,7 +277,7 @@
                     {
 
 
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
                 }
@@ -293,7 +294,7 @@
                     {
 
 
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
                 }
@@ -310,7 +311,7 @@
                     {
 
 
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
                 }
@@ -327,7 +328,7 @@
                     {
 
 
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
                 }
@@ -344,7 +345,7 @@
                     {
 
 
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
                 }
@@ -359,7 +360,7 @@
 
                     if (item.Name.StartsWith("O"))
                     {
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
                 }
             </ul>
@@ -373,7 +374,7 @@
 
                     if (item.Name.StartsWith("P"))
                     {
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
                 }
             </ul>
@@ -387,7 +388,7 @@
 
                     if (item.Name.StartsWith("Q"))
                     {
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
                 }
             </ul>
@@ -401,7 +402,7 @@
 
                     if (item.Name.StartsWith("R"))
                     {
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
                 }
             </ul>
@@ -416,7 +417,7 @@
 
                     if (item.Name.StartsWith("S"))
                     {
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
                 }
             </ul>
@@ -430,7 +431,7 @@
 
                     if (item.Name.StartsWith("T"))
                     {
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
                 }
             </ul>
@@ -444,7 +445,7 @@
 
                     if (item.Name.StartsWith("U"))
                     {
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
                 }
             </ul>
@@ -458,7 +459,7 @@
 
                     if (item.Name.StartsWith("V"))
                     {
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
                 }
             </ul>
@@ -472,7 +473,7 @@
 
                     if (item.Name.StartsWith("W"))
                     {
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
                 }
             </ul>
@@ -486,7 +487,7 @@
 
                     if (item.Name.StartsWith("X"))
                     {
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
                 }
             </ul>
@@ -500,7 +501,7 @@
 
                     if (item.Name.StartsWith("Y"))
                     {
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
                 }
             </ul>
@@ -514,7 +515,7 @@
 
                     if (item.Name.StartsWith("Z"))
                     {
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
                 }
             </ul>
