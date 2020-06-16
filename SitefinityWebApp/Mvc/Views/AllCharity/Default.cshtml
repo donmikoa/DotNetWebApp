@@ -82,6 +82,11 @@
             <div style="margin-left:10px">
                 <button id="refresh-btn">Reset</button>
             </div>
+            
+            <div>
+                <input type="checkbox" onchange="stickyheaddsadaer(this)" />
+            </div>
+            
         </div>
         <div class="divider_grey_20">&nbsp;</div>
     </div>
@@ -111,7 +116,7 @@
                     {
 
 
-                        <li><a href="@item.Url">@item.Name</a></li>
+                        <li id="filter" data-accreditied="@item.Accredited"><a href="@item.Url">@item.Name</a></li>
 
                     }
 
