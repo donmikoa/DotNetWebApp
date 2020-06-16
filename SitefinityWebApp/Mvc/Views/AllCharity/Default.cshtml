@@ -84,8 +84,10 @@
             </div>
             
             <div>
-                <input type="checkbox" onchange="stickyheaddsadaer(this)" />
+                <input type="checkbox" onchange="accreditation(this)" /><p>Accredited</p>
             </div>
+            
+          
             
         </div>
         <div class="divider_grey_20">&nbsp;</div>
@@ -116,7 +118,7 @@
                     {
 
 
-                        <li id="filter" data-accreditied="@item.Accredited"><a href="@item.Url">@item.Name</a></li>
+                        <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
 

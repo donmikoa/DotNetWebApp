@@ -11,6 +11,20 @@
 		t.show(600);
 });
 
+
+function accreditation(obj) {
+	if ($(obj).is(":checked")) {
+
+        $(".notAccredited").hide();
+		
+      
+	} else {
+        $(".notAccredited").show();
+        
+    }
+
+}
+
 window.onload = function () {
 	var selItem = sessionStorage.getItem("SelItem");
 	if (selItem == null) {
