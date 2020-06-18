@@ -95,18 +95,18 @@
 </div>
 
 <div>
-    @foreach (var item in Model.Results) { 
+    @*@foreach (var item in Model.Results) { 
         if (item.AlternativeNames.Count() > 0)
     {
         foreach (string aka in item.AlternativeNames)
         {
-            <ol>
-                <li class="result__location">@aka and url is @item.Url</li>
-            </ol>
+            
+                <li class="@(item.Accredited ?"accredited":"notAccredited")">@aka</li>
+            
            
         }
     }
-    }
+    }*@
 
 
 </div>
@@ -121,6 +121,21 @@
                     {
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     };
+
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka == null || aka.StartsWith("1") || aka.StartsWith("2") || aka.StartsWith("3") || aka.StartsWith("4") || aka.StartsWith("5") || aka.StartsWith("6") || aka.StartsWith("7") || aka.StartsWith("8") || aka.StartsWith("9") || aka.StartsWith("0"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
+                    }
                 }
 
             </ul>
@@ -140,6 +155,21 @@
 
                     }
 
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("A"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
+                    }
+
                 }
             </ul>
         </div>
@@ -156,6 +186,20 @@
 
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
+                    }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("B"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
                     }
 
                 }
@@ -175,6 +219,20 @@
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("C"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
+                    }
 
                 }
             </ul>
@@ -192,6 +250,20 @@
 
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
+                    }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("D"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
                     }
 
                 }
@@ -211,6 +283,20 @@
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("E"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
+                    }
 
                 }
             </ul>
@@ -229,6 +315,21 @@
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
+
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("F"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
+                    }
                 }
             </ul>
         </div>
@@ -245,6 +346,20 @@
 
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
+                    }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("G"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
                     }
                 }
             </ul>
@@ -263,6 +378,20 @@
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("H"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
+                    }
                 }
             </ul>
         </div>
@@ -279,6 +408,20 @@
 
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
+                    }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("I"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
                     }
                 }
             </ul>
@@ -297,6 +440,20 @@
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("J"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
+                    }
                 }
             </ul>
         </div>
@@ -313,6 +470,20 @@
 
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
+                    }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("K"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
                     }
                 }
             </ul>
@@ -331,6 +502,20 @@
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("L"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
+                    }
                 }
             </ul>
         </div>
@@ -347,6 +532,20 @@
 
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
+                    }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("M"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
                     }
                 }
             </ul>
@@ -365,6 +564,20 @@
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
 
                     }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("N"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
+                    }
                 }
             </ul>
         </div>
@@ -378,6 +591,20 @@
                     if (item.Name.StartsWith("O"))
                     {
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
+                    }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("O"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
                     }
                 }
             </ul>
@@ -393,6 +620,20 @@
                     {
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("P"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
+                    }
                 }
             </ul>
         </div>
@@ -407,6 +648,20 @@
                     {
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("Q"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
+                    }
                 }
             </ul>
         </div>
@@ -420,6 +675,20 @@
                     if (item.Name.StartsWith("R"))
                     {
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
+                    }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("R"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
                     }
                 }
             </ul>
@@ -436,6 +705,20 @@
                     {
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("S"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
+                    }
                 }
             </ul>
         </div>
@@ -449,6 +732,20 @@
                     if (item.Name.StartsWith("T"))
                     {
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
+                    }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("T"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
                     }
                 }
             </ul>
@@ -464,6 +761,20 @@
                     {
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("U"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
+                    }
                 }
             </ul>
         </div>
@@ -477,6 +788,20 @@
                     if (item.Name.StartsWith("V"))
                     {
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
+                    }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("V"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
                     }
                 }
             </ul>
@@ -492,6 +817,20 @@
                     {
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("W"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
+                    }
                 }
             </ul>
         </div>
@@ -505,6 +844,20 @@
                     if (item.Name.StartsWith("X"))
                     {
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
+                    }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("X"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
                     }
                 }
             </ul>
@@ -520,6 +873,20 @@
                     {
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
                     }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("Y"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
+                    }
                 }
             </ul>
         </div>
@@ -533,6 +900,20 @@
                     if (item.Name.StartsWith("Z"))
                     {
                         <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@item.Name</a></li>
+                    }
+                    if (item.AlternativeNames.Count() > 0)
+                    {
+                        foreach (string aka in item.AlternativeNames)
+                        {
+
+                            if (aka.StartsWith("Z"))
+                            {
+
+                                <li class="@(item.Accredited ?"accredited":"notAccredited")"><a href="@item.Url">@aka</a></li>
+                            }
+
+
+                        }
                     }
                 }
             </ul>

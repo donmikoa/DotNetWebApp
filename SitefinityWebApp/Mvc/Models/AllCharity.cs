@@ -23,7 +23,10 @@ namespace SitefinityWebApp.Mvc.Models
                 {
                     string trimmedAka = akastring.Remove(akastring.Length - 1, 1);
                     parsedAlternativeNames.AddRange(trimmedAka.Split('|'));
+                   // var itemToRemove = parsedAlternativeNames.FirstOrDefault(e => e == title);
+                    parsedAlternativeNames.RemoveAll(e => e == title);
                 }
+                
             }
             this._alternativeNames = parsedAlternativeNames;
 
