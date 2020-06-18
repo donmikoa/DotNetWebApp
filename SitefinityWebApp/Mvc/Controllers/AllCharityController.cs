@@ -114,7 +114,7 @@ namespace SitefinityWebApp.Mvc.Controllers
 
 
             // choose fields to return
-            url += "&fl=title,reporturl,accredited&rows=1000000";
+            url += "&fl=title,reporturl,alternativenames,accredited&rows=1000000";
 
             // sort the response
 
