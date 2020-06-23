@@ -14,15 +14,10 @@
 
 function accreditation(obj) {
 	if ($(obj).is(":checked")) {
-
-        $(".notAccredited").hide();
-		
-      
+		$(".notAccredited").hide();
 	} else {
-        $(".notAccredited").show();
-        
+		$(".notAccredited").show();
     }
-
 }
 
 window.onload = function () {
