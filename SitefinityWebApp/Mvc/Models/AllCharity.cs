@@ -16,6 +16,8 @@ namespace SitefinityWebApp.Mvc.Models
             this._url = reporturl;
             this._accredited = accredited;
 
+            String substr = "&amp;";
+
             List<string> parsedAlternativeNames = new List<string>();
             foreach (string akastring in alternativenames)
             {
@@ -25,6 +27,8 @@ namespace SitefinityWebApp.Mvc.Models
                     parsedAlternativeNames.AddRange(trimmedAka.Split('|'));
                    // var itemToRemove = parsedAlternativeNames.FirstOrDefault(e => e == title);
                     parsedAlternativeNames.RemoveAll(e => e == title);
+                    parsedAlternativeNames.RemoveAll(e => e.Contains(substr));
+
                 }
                 
             }
