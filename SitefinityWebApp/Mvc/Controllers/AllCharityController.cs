@@ -92,11 +92,16 @@ namespace SitefinityWebApp.Mvc.Controllers
 
 
 
+
+
         private string assembleRequestUrl(string categories)
         {
             // Assemble request URL
-            string url = "http://172.16.47.206:8080/solr/WGA/select?q=(bureauid:9999";
-            // string url = "http://172.16.47.206:8080/search/?term=" + term;
+            //string url = "http://192.168.225.84:8080/solr/WGA/select?q=(bureauid:9999 ";
+            // string url = "http://172.16.1.36:4001/search/?term=" + term;
+
+            //192.168.225.84:8080/solr/WGA/select?wt=json&indent=true&rows=100&sort=title ASC&q=(*)
+            string url = "http://172.16.47.62:8080/solr/WGA/select?q=(bureauid:9999 ";
 
 
 

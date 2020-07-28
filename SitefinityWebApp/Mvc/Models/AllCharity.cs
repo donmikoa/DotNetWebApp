@@ -13,8 +13,8 @@ namespace SitefinityWebApp.Mvc.Models
         public AllCharity(string title, string reporturl, bool accredited, string[] alternativenames)
         {
             this._name = title;
-            this._url = reporturl;
-            this._accredited = accredited;
+            this._url = new Uri(reporturl).AbsolutePath;
+            this._accreditied = accredited;
 
             String substr = "&amp;";
 
@@ -25,34 +25,30 @@ namespace SitefinityWebApp.Mvc.Models
                 {
                     string trimmedAka = akastring.Remove(akastring.Length - 1, 1);
                     parsedAlternativeNames.AddRange(trimmedAka.Split('|'));
-                   // var itemToRemove = parsedAlternativeNames.FirstOrDefault(e => e == title);
                     parsedAlternativeNames.RemoveAll(e => e == title);
                     parsedAlternativeNames.RemoveAll(e => e.Contains(substr));
-
                 }
-                
+
             }
             this._alternativeNames = parsedAlternativeNames;
 
         }
-        public IList<string> AlternativeNames { get { return this._alternativeNames; } }
-        public string Name { get { return this._name; } }
-        
-    public string Url { get { return this._url; } }
 
+        public IList<string> AlternativeNames { get { return this._alternativeNames; } }
+
+        public string Name { get { return this._name; } }
+        public string Url { get { return this._url; } }
         public bool Accredited
         {
-            get { return this._accredited; }
+            get { return this._accreditied; }
         }
 
-        
 
-
-
-private readonly string _name;
+        private readonly string _name;
         private readonly string _url;
-        private readonly bool _accredited;
+        private readonly bool _accreditied;
         private readonly IList<string> _alternativeNames;
+
         public int CompareTo(AllCharity other)
         {
             return this.Name.CompareTo(other.Name);
